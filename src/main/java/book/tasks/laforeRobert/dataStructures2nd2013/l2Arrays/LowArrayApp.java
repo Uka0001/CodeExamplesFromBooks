@@ -35,18 +35,18 @@ public class LowArrayApp {
         //delete
 
         searchKey = 87;
-        for (j=0; j<nElems; j++){
-            if (arr[j] == searchKey){
+        for (j = 0; j < nElems; j++) {
+            if (arr[j] == searchKey) {
                 break;
             }
         }
-        for (int k=j; k<nElems-1; k++){
-            arr[k] = arr[k+1];
+        for (int k = j; k < nElems - 1; k++) {
+            arr[k] = arr[k + 1];
             nElems--;
         }
 
         //ouput elements
-        for (j=0; j<nElems; j++){
+        for (j = 0; j < nElems; j++) {
             System.out.println(arr[j] + " ");
         }
         System.out.println("");

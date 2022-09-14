@@ -25,7 +25,8 @@ public class HighArray {
 
     public void insert(long value) {
         a[nElems] = value;
-        nElems++;    }
+        nElems++;
+    }
 
     public boolean delete(long value) {
         int j;
@@ -38,7 +39,7 @@ public class HighArray {
             return false;
         } else {
             for (int k = j; k < nElems; k++) {
-                a[k] = a[k+1];
+                a[k] = a[k + 1];
             }
             nElems--;
             return true;
@@ -50,5 +51,26 @@ public class HighArray {
             System.out.print(a[j] + " ");
         }
         System.out.println("");
+    }
+
+    public int findBinary(long searchKey) {
+        int lowerBound = 0;
+        int upperBound = nElems - 1;
+        int curIn;
+
+        while (true) {
+            curIn = (lowerBound + upperBound) / 2;
+            if (a[curIn] == searchKey) {
+                return curIn;
+            } else if (lowerBound > upperBound) {
+                return nElems; //element doesnt find
+            } else {
+                if (a[curIn] < searchKey) {
+                    lowerBound = curIn + 1;
+                } else {
+                    upperBound = curIn - 1;
+                }
+            }
+        }
     }
 }
