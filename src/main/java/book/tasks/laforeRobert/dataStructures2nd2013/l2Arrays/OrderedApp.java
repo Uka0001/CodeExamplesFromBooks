@@ -31,5 +31,8 @@ public class OrderedApp {
         array.delete(89);
 
         array.display();
+
+        array.insert(88);
+        array.display();
     }
 }
