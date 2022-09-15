@@ -29,5 +29,14 @@ public class HighArrayApp {
         array.delete(76);
 
         array.display();
+
+        array.findMax();
+
+        array.removeMax();
+
+        array.display();
+
+        array.SortMax();
+        array.display();
     }
 }
