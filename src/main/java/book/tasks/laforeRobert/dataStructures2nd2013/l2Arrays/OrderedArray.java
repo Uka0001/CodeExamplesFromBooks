@@ -13,6 +13,34 @@ public class OrderedArray {
         return nElements;
     }
 
+    /*
+    //Dima realisation
+    binarySearch(arr, x, low, high)
+        repeat till low = high
+               mid = (low + high)/2
+                   if (x == arr[mid])
+                   return mid
+
+                   else if (x > arr[mid]) // x is on the right side
+                       low = mid + 1
+
+                   else                  // x is on the left side
+                       high = mid - 1
+                       */
+
+    /*
+    //Sergey's realisation
+    int binSearch(long[] array, long v, int indexOffset) {
+        if (array.length == 1 && array[0] != v) {
+            return -1;
+        } else {
+            int midIndex = array.length / 2;
+            long midValue = array[midIndex];
+            if (midValue < v) {
+                return binSearch(Arrays.copyOfRange(array, midIndex, array.length), v, indexOffset + midIndex);
+            } else if (midValue > v) {
+                return binSearch(Arrays.copyOfRange(array, 0, midIndex), v, indexO
+                */
     public int find(long searchKey) { //binary search
         int position;
         int comparisonCount = 0;

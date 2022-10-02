@@ -16,10 +16,10 @@ public class BubbleSortApp {
         arrayBub.insert(35);
         arrayBub.insert(25);
 
-        arrayBub.display();
+        arrayBub.display(); //display elements
 
-        arrayBub.bubbleSort();
-        arrayBub.display();
+        arrayBub.bubbleSort(); //sorting method by inserting
+        arrayBub.display(); //recall display elements
     }
 
 }
