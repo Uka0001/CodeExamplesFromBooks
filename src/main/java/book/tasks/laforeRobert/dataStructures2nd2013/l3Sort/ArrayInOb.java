@@ -1,5 +1,6 @@
 package book.tasks.laforeRobert.dataStructures2nd2013.l3Sort;
-
+/*
+ * Insertion sorting method*/
 public class ArrayInOb {
     private Person [] a;
     private int nElems;

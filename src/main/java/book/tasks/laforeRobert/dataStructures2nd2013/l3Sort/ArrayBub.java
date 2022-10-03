@@ -1,6 +1,6 @@
 package book.tasks.laforeRobert.dataStructures2nd2013.l3Sort;
-
-import static java.util.Collections.swap;
+/*
+ * Bubble sorting method*/
 
 public class ArrayBub {
     private long[] a;
